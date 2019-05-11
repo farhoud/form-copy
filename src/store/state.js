@@ -1,15 +1,15 @@
-import * as types from './mutation-types';
+import * as types from "./mutation-types";
 
 // initial state
 export const state = {
-  input: '',
+  clipboard: null
 };
 
 // mutations
 export const mutations = {
-  // [types.INPUT_CHANGED](state, value) {
-  //     state.input = value;
-  // },
+  [types.SET](state, value) {
+    state.clipboard = value;
+  }
   // [types.TOGGLE_RECORDING](state) {
   //   state.isAudioRecording = !state.isAudioRecording;
   // }

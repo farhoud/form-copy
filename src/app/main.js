@@ -33,6 +33,15 @@ root.setAttribute("id", "sanaz-container");
 root.setAttribute("show", "true");
 document.body.appendChild(root);
 
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+  console.log(
+    sender.tab
+      ? "from a content script:" + sender.tab.url
+      : "from the extension"
+  );
+  if (request.greeting == "copy_form_") sendResponse({ farewell: "goodbye" });
+});
+
 // window.addEventListener('message', function(event) {
 //   // We only accept messages from ourselves
 //   if (event.source != window)

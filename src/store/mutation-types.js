@@ -1,2 +1,1 @@
-// export const INPUT_CHANGED = 'inputChanged';
-
+export const SET = "copy";

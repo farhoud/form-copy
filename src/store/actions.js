@@ -1,6 +1,6 @@
-import * as types from './mutation-types';
+import * as types from "./mutation-types";
 
-// actions
-// export const loadCommandSuggestions = function({ commit, state }) {
-//   commit(types.LOUD_COMMAND_SUGGESTION, getCommandSuggetions(state.input));
-// };
+//actions
+export const set = function({ commit }, value) {
+  commit(types.SET, value);
+};

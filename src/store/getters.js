@@ -1,5 +1,5 @@
-// // getters
+// getters
 
-// export const getSuggestedInput = function(state) {
-//   return state.inputSuggestions.length > 0 ? state.inputSuggestions[0] : '';
-// };
+export const get = function(state) {
+  return state.clipboard;
+};
