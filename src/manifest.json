@@ -7,23 +7,14 @@
     "48": "icons/icon_48.png",
     "128": "icons/icon_128.png"
   },
-  "web_accessible_resources": [
-    "app/main.js",
-    "assets/*.svg"
-  ],
+  "web_accessible_resources": ["app/main.js", "assets/*.svg"],
   "browser_action": {
-    "default_title": "sanaz",
-    "default_popup": "popup/popup.html"
+    "default_title": "sanaz"
   },
   "content_scripts": [
     {
-      "matches": [
-        "https://*/*",
-        "http://*/*"
-      ],
-      "js": [
-        "app/main.js"
-      ]
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["app/main.js"]
     }
   ],
   "permissions": [
@@ -36,8 +27,6 @@
     "webRequestBlocking"
   ],
   "background": {
-    "scripts": [
-      "background.js"
-    ]
+    "scripts": ["background.js"]
   }
 }
